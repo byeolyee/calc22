@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hannah's calculator</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <section class="top">
+            <nav class="navigation">
+                <span class="close"></span>
+                <span class="minimal"></span>
+                <span class="zoom"></span>
+            </nav>
+            <div class="result">0</div>
+        </section>
+        <section class="contents">
+            <section class="numbers">
+                <div class="clear">
+                    <button class="ac">AC</button>
+                </div>
+                <div class="first-row">
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                </div>
+                <div class="second-row">
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                </div>
+                <div class="first-row">
+                    <button class="number">3</button>
+                    <button class="number">2</button>
+                    <button class="number">1</button>
+                </div>
+                <div class="fourth-row">
+                    <button class="number">0</button>
+                </div>
+            </section>
+            <section class="operators">
+                <button class="operator">+</button>
+                <button class="operator">/</button>
+                <button class="operator">*</button>
+                <button class="operator">-</button>
+                <button class="answer">=</button>
+            </section>
+        </section>
+    </div>
 </body>
 </html>

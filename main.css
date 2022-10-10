@@ -1,0 +1,129 @@
+body{
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    background-color: #fff;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height : 50px;
+    border : none;
+    margin : .5px;
+    cursor: pointer;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top : 20px;
+    width : 21.3rem;
+    border : 1px solid #222;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.container .top{
+    height : 7rem;
+    background-color: #2c2d2f;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+
+.container .top .navigation{
+    margin-left: 4px;
+}
+.container .top .navigation>*{
+    display : inline-block;
+    width : 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.container .top .navigation .close{
+    background-color: #ff5b52;
+}
+
+.container .top .navigation .minimal{
+    background-color: #e6c029;
+}
+.container .top .navigation .zoom{
+    background-color: #53c22c;
+}
+
+.container .top .result{
+    padding : 0.3rem 0.7rem;
+    height : calc(100%-1rem);
+    display : flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color : #fff;
+    font-size: 60px;
+}
+
+
+.container .contents{
+    display : flex;
+}
+
+.container .contents button:hover{
+    background-color: #fff;
+}
+
+.container .contents button:active{
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%) inset;
+}
+
+.container .contents .clear,
+.container .contents .numbers{
+    display : flex;
+    flex-direction: column;
+    width : 15rem;
+}
+
+.container .contents .clear .ac{
+    width : 100%;
+}
+
+.container .contents .operators {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .contents .numbers .first-row,
+.container .contents .numbers .second-row,
+.container .contents .numbers .third-row {
+    display: flex;
+}
+
+.container .contents .operators .operator {
+    background: #ff9f0d;
+}
+
+.container .contents .numbers .clear .ac,
+.container .contents .operator { 
+  padding: 1.825rem;
+  font-size: 1.4rem;
+}
+
+.container .contents .answer{
+    padding: 1.825rem;
+    font-size: 1.4rem;
+    border-radius: 0 0 0.5rem 0;
+    background: #ff9f0d;
+}
+
+.container .contents .numbers .number {
+    width: 5rem;
+    padding: 1.825rem 0;
+    font-size: 1.4rem;
+}
+
+.container .contents .numbers .fourth-row .number {
+    width: 100%;
+    border-radius: 0 0 0 0.5rem;
+}
